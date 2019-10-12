@@ -26,11 +26,16 @@ router.get('/', function(req, res, next) {
 });
 
 
-router.get('/kamarHotel', function(req, res, next) {
-  let data = {
+router.get('/infoHotel', function(req, res, next) {
+    let data = {
     layout: 'dashboard',
-    title: 'MyHotel | Info-Kamar',
+    title: 'MyHotel | Info-Hotel',
   };
+  res.render('admin/infoHotel/index', data);
+});
+
+
+router.get('/kamarHotel', function(req, res, next) {
   kamarData.find()
   .then(function(doc){
     res.render('admin/kamarHotel/index', {items: doc});

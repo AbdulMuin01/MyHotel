@@ -1,0 +1,67 @@
+<br />
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="/admin">
+              <i class="fa fa-tachometer  fa-fw"></i>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/infoHotel">
+              <i class="fa fa-building-o fa-fw"></i>
+              Informasi Hotel
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/kamarHotel">
+              <i class="fa fa-bed fa-fw"></i>
+              Kelola Kamar Hotel
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Informasi Hotel</h1>
+      </div>
+
+      <div class="row">
+        
+        <div class="col-md-6 texy-center">
+          <img src="/images/logo.png" width="250" class="mx-auto d-block">
+          <div class="text-center">
+            <h5>Nama Hotel : MyHotel</h5>
+            <h5>Lokasi : Dekat Tugu Suling</h5>
+            <h5>Alamat Hotel : Jl. Bandung KM.09 Cianjur Pusat</h5>
+            <br />
+            <label class="btn btn-sm btn-info" for="namaHotel">Ubah Data</label>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <h4 class="text-center">Isi Bila Anda Ingin Mengubah Data</h4>
+          <hr>
+
+          <form action="" method="post">
+            <input type="text" name="namaHotel" id="namaHotel" class="form-control" placeholder="Nama Hotel">
+            <br />
+            <input type="text" name="alamatHotel"  class="form-control" placeholder="Alamat Hotel">
+            <br />
+            <input type="text" name="lokasiHotel"  class="form-control" placeholder="Lokasi Hotel">
+            <br />
+            <button type="submit" class="btn btn-sm btn-primary form-control">Submit</button>
+          </form>
+        </div>
+
+      </div>
+      
+    </main>
+  </div>
+</div>
