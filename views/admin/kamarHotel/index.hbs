@@ -32,7 +32,7 @@
         <h1 class="h2">Kelola Kamar Hotel</h1>
       </div>
 
-      <a href="" class="btn btn-sm btn-primary">Tambah Data</a>
+      <a href="/admin/tambah-data" class="btn btn-sm btn-primary">Tambah Data</a>
       <br /><br />
       
       <table class="table table-bordered">
@@ -56,8 +56,8 @@
           <td class="text-center">{{this.fasilitas}}</td>
           <td class="text-center">{{this.harga}}</td>
           <td class="text-center">
-            <a href="" class="btn btn-sm btn-success">Ubah</a> ||
-            <a href="" class="btn btn-sm btn-danger">Hapus</a>
+            <a href="/admin/ubah-data" class="btn btn-sm btn-success">Ubah</a> ||
+            <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Anda Yakin ?')">Hapus</a>
           </td>
         </tr>
       </tbody>

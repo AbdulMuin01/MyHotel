@@ -13,7 +13,7 @@ router.get('/', function(req, res, next) {
 router.get('/login', function(req, res, next){
 	let dat = {
 		layout: 'login',
-		title: 'SIgn In',
+		title: 'Sign-in',
 	};
 	res.render('login', dat);
 });
