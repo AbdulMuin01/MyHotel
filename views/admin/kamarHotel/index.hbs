@@ -1,0 +1,70 @@
+<br /><br /><br />
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" href="/admin">
+              <i class="fa fa-tachometer  fa-fw"></i>
+              Dashboard <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-building-o fa-fw"></i>
+              Informasi Hotel
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/kamarHotel">
+              <i class="fa fa-bed fa-fw"></i>
+              Informasi Kamar Hotel
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+        <h1 class="h2">Informasi Kamar Hotel</h1>
+      </div>
+
+      <a href="" class="btn btn-sm btn-primary">Tambah Data</a>
+      <br /><br />
+      
+      <table class="table table-bordered">
+      	<thead>
+      		<tr>
+      			<th class="text-center">No</th>
+      			<th class="text-center">No.Kamar</th>
+      			<th class="text-center">Jumlah Kasur</th>
+      			<th class="text-center">Fasilitas</th>
+      			<th class="text-center">Harga / Malam</th>
+      			<th class="text-center">Aksi</th>
+      		</tr>
+      	</thead>
+
+       {{# each items}}
+       <tbody>
+        <tr>
+          <td>-</td>
+          <td class="text-center">{{this.noKamar}}</td>
+          <td class="text-center">{{this.jmlKasur}}</td>
+          <td class="text-center">{{this.fasilitas}}</td>
+          <td class="text-center">{{this.harga}}</td>
+          <td class="text-center">
+            <a href="" class="btn btn-sm btn-success">Ubah</a> ||
+            <a href="" class="btn btn-sm btn-danger">Hapus</a>
+          </td>
+        </tr>
+      </tbody>
+      {{/ each}}
+      	
+      </table>
+
+    </main>
+  </div>
+</div>
