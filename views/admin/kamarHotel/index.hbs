@@ -36,35 +36,36 @@
       <br /><br />
       
       <table class="table table-bordered">
-      	<thead>
-      		<tr>
-      			<th class="text-center">No</th>
-      			<th class="text-center">No.Kamar</th>
-      			<th class="text-center">Jumlah Kasur</th>
-      			<th class="text-center">Fasilitas</th>
-      			<th class="text-center">Harga / Malam</th>
-      			<th class="text-center">Aksi</th>
-      		</tr>
-      	</thead>
+        <thead>
+          <tr>
+            <th class="text-center">No</th>
+            <th class="text-center">No.Kamar</th>
+            <th class="text-center">Jumlah Kasur</th>
+            <th class="text-center">Fasilitas</th>
+            <th class="text-center">Harga / Malam</th>
+            <th class="text-center">Aksi</th>
+          </tr>
+        </thead>
 
-       {{# each items}}
-       <tbody>
-        <tr>
-          <td>-</td>
-          <td class="text-center">{{this.noKamar}}</td>
-          <td class="text-center">{{this.jmlKasur}}</td>
-          <td class="text-center">{{this.fasilitas}}</td>
-          <td class="text-center">{{this.harga}}</td>
-          <td class="text-center">
-            <a href="/admin/ubah-data" class="btn btn-sm btn-success">Ubah</a> ||
-            <a href="" class="btn btn-sm btn-danger" onclick="return confirm('Anda Yakin ?')">Hapus</a>
-          </td>
-        </tr>
-      </tbody>
-      {{/ each}}
-      	
+        {{#each kamar}}
+        <tbody>
+          <tr>
+            <td>-</td>
+            <td class="text-center">{{noKamar}}</td>
+            <td class="text-center">{{jmlKasur}}</td>
+            <td class="text-center">{{fasilitas}}</td>
+            <td class="text-center">{{harga}}</td>
+            <td class="text-center">
+              <a href="/admin/ubah-data/{{ id }}" class="btn btn-sm btn-success">Ubah</a> ||
+              <a href="/admin/hapus-data/{{ id }}" class="btn btn-sm btn-danger" onclick="return confirm('Anda Yakin ?')">Hapus</a>
+            </td>
+          </tr>
+        </tbody>
+        {{/each}}
+        
       </table>
 
     </main>
+    
   </div>
 </div>
