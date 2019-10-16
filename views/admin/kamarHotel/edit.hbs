@@ -38,14 +38,14 @@
         <div class="col-md-3"></div>
 
         <div class="col-md-6">
-          <form action="" method="post">
-            <input type="text" name="noKamar" id="namaHotel" class="form-control" placeholder="No Kamar">
+          <form action="/admin/ubah-data/{{kamar.id}}/update" method="post">
+            <input type="text" name="noKamar" id="namaHotel" class="form-control" value="{{ kamar.noKamar }}">
             <br />
-            <input type="text" name="jmlKasur"  class="form-control" placeholder="Jumlah Kasur">
+            <input type="text" name="jmlKasur"  class="form-control" value="{{ kamar.jmlKasur }}">
             <br />
-            <input type="text" name="fasilitas"  class="form-control" placeholder="Fasilitas">
+            <input type="text" name="fasilitas"  class="form-control" value="{{ kamar.fasilitas }}">
             <br />
-            <input type="text" name="harga"  class="form-control" placeholder="Harga">
+            <input type="text" name="harga"  class="form-control" value="{{ kamar.harga }}">
             <br />
             <button type="submit" class="btn btn-sm btn-primary form-control">Submit</button>
           </form>
